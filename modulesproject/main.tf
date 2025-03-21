@@ -22,7 +22,6 @@ module "ec2" {
 module "s3" {
   source      = "./modules/s3-bucket"
   bucket_name = "my-awesome-bucket-reya"
-  acl         = "private"
 }
 
 output "ec2_public_ip" {
